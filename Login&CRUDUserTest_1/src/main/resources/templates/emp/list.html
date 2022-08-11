@@ -99,13 +99,14 @@
 
 
 	<!-- Icons -->
-	<script type="text/javascript" src="asserts/js/feather.min.js" th:src="@{/asserts/js/feather.min.js}"></script>
+	<script type="text/javascript" src="asserts/js/feather.min.js"></script>
 	<script>
 		feather.replace()
 	</script>
 	<script>
 		$(".deleteBtn").click(function(){
 			//删除当前员工的
+
 			$("#deleteEmpForm").attr("action",$(this).attr("del_uri")).submit();
 			return false;
 		});
